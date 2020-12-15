@@ -2,7 +2,7 @@ import re
 
 pattern = '^[RDTAC]?x?[a-h][1-8]$'
 
-def checkChessSyntax(text):
+def check_chess_syntax(text):
     # TODO:IMPLEMENTARE
     pass
 
@@ -14,7 +14,7 @@ for text in [
     # INVALID SAMPLES
     'a9','Ga2','sbricci','']:
     try:
-        checkChessSyntax(text)
+        check_chess_syntax(text)
     except:
         print("'{}' is INVALID:".format(text))
     else:
